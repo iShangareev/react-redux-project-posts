@@ -5,7 +5,6 @@ const initialState = {
 }
 
 export const likesReducer = (state = initialState, action) => {
-  console.log('likesRed', action)
 
   switch(action.type) {
     case INCREMENT:
