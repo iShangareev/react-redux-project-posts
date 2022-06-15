@@ -11,7 +11,6 @@ const Comments = (props) => {
     const  { commentsReducer } = state
     return commentsReducer.comments
   })
-  console.log(comments)
 
   const dispatch = useDispatch()
 
@@ -26,7 +25,7 @@ const Comments = (props) => {
   }
 
   return (
-    <div  className='card-comments'>
+    <div className='card-comments'>
       <form onSubmit={handleSubmit} className='comments-item-create'>
         <input type="text" value={textComment} onChange={handleInput}/>
         <input type="submit" hidden/>
